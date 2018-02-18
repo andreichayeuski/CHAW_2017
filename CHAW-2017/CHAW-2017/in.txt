@@ -1,0 +1,44 @@
+func funa(a, b : dig) : dig
+{
+var c, d : dig;
+c = power(a, 2);
+d = a*(b+c);
+ret d;
+}
+
+func funb(q : dig, w : chr) : dig
+{
+var e : dig;
+e = q*2-strl(w);
+ret e;
+}
+
+body
+{
+
+var a, b,		    c, d : dig;
+d = 10;
+a = 5;
+b = d;
+c = funa(a,b);
+out(c);
+var q : dig;
+var e : chr;
+e = "Privet, Andrey";
+c = funb(q,e) + 10;
+out(c);
+var k : chr;
+k = "test";
+d = strl(k);
+if (a<b) then
+{
+out("Число 1 меньше числа 2!");
+}
+else
+{
+out("Число 1 больше числа 2.");
+}
+out("Курсовой проект");
+out("08121998");
+ret 0;
+}
